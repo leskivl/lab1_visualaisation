@@ -27,7 +27,7 @@ class Data:
   d=0
   for  i in range(self.n):
     d+=(a[i]-self.average(a))**2
-   return d
+   return d/self.n
   
   def sigma(self, a):
     return math.sqrt(self.disp(a))
